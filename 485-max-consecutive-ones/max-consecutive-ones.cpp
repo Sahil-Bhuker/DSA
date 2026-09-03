@@ -6,11 +6,10 @@ public:
         for(int i =0 ; i<nums.size(); i++){
             if(nums[i]==1){
                 count++;
-            }else{
                 maxC = max(maxC,count);
+            }else{
                 count=0;
             }
-            maxC = max(maxC,count);
         }
         return maxC;
     }
